@@ -11,16 +11,19 @@ import {
 } from 'react-native-webview';
 
 export default () => {
-  const [isWebViewVisible, setIsWebViewVisible] = useState(false);
+  const [isWebViewVisible, setIsWebViewVisible] = useState(true);
 
   const toggleWebView = useCallback(() => {
-    setIsWebViewVisible(!isWebViewVisible);
-  }, [isWebViewVisible]);
+    setIsWebViewVisible(false);
+    setTimeout(() => {
+      setIsWebViewVisible(true);
+    });
+  }, []);
 
   return (
     <>
       <Button
-        title="Toggle WebView"
+        title="Rerender WebView"
         onPress={toggleWebView}
       />
       {isWebViewVisible ? (
@@ -29,7 +32,7 @@ export default () => {
           originWhitelist={['*']}
           source={{ uri: 'file:///android_asset/index.html' }}
           injectedJavaScriptBeforeContentLoaded={`
-            alert('Injected java script executed');
+            alert('Injected java script');
           `}
         />
       ) : <View />}
