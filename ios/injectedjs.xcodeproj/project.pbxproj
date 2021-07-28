@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7798CF652615D6D60005428E /* webView in Resources */ = {isa = PBXBuildFile; fileRef = 7798CF642615D6D60005428E /* webView */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BE305EC39435B0B7145D0CE9 /* libPods-injectedjs-injectedjsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1CF36D7E2638741FF2AA57 /* libPods-injectedjs-injectedjsTests.a */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = injectedjs/main.m; sourceTree = "<group>"; };
 		2A1CF36D7E2638741FF2AA57 /* libPods-injectedjs-injectedjsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-injectedjs-injectedjsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		597387D109C198FB9F39B689 /* Pods-injectedjs-injectedjsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-injectedjs-injectedjsTests.release.xcconfig"; path = "Target Support Files/Pods-injectedjs-injectedjsTests/Pods-injectedjs-injectedjsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7798CF642615D6D60005428E /* webView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webView; sourceTree = "<group>"; };
 		79E5E6480DC0D4C73D3943E2 /* Pods-injectedjs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-injectedjs.debug.xcconfig"; path = "Target Support Files/Pods-injectedjs/Pods-injectedjs.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = injectedjs/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB12A702E953D404EBF49CE /* libPods-injectedjs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-injectedjs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,13 +93,13 @@
 				C57321A161D27C730969BDC9 /* Pods-injectedjs-injectedjsTests.debug.xcconfig */,
 				597387D109C198FB9F39B689 /* Pods-injectedjs-injectedjsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* injectedjs */ = {
 			isa = PBXGroup;
 			children = (
+				7798CF642615D6D60005428E /* webView */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -243,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7798CF652615D6D60005428E /* webView in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

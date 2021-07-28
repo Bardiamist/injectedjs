@@ -3,6 +3,7 @@ import React, {
   useCallback,
 } from 'react';
 import {
+  Platform,
   View,
   Button,
 } from 'react-native';
@@ -22,6 +23,7 @@ export default () => {
 
   return (
     <>
+      <View style={{ height: 44 }} />
       <Button
         title="Rerender WebView"
         onPress={toggleWebView}
@@ -30,8 +32,9 @@ export default () => {
         <WebView
           allowUniversalAccessFromFileURLs
           originWhitelist={['*']}
-          source={{ uri: 'file:///android_asset/index.html' }}
+          source={{ uri: Platform.OS === 'ios' ? 'webView/index.html' : 'file:///android_asset/index.html' }}
           injectedJavaScriptBeforeContentLoaded={`
+            window.injectedSettings = 'Hello';
             alert('Injected java script');
           `}
         />
